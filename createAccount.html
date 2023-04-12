@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Creation</title>
+</head>
+<body>
+<h1>Create a new Account</h1>
+<form action="./createAccount.php" method = "post">
+
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username" required> <br>
+
+    <label for="password">Password: </label>
+    <input type="text" id="password" name="password" required> <br>
+
+    <button type="submit">Create Account</button>
+</form>
+<button id="btnLogin" onclick="location.href='./login.html'">Back to Login</button>
+</body>
+</html>
