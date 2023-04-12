@@ -19,9 +19,9 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
             //if a normal user has logged in, go to voting. Otherwise, go to the admin panel
             if ($row['is_admin'] == 0)
-                header("Location: votingpage.php");
+                header("Location: voting_page.php");
             else
-                header("Location: adminpanel.php");
+                header("Location: admin_panel.php");
 
         } else {
 

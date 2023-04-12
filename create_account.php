@@ -15,7 +15,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     if (mysqli_num_rows($data) === 1) {
 
         echo "User already exists";
-        header("Location: createAccount.php?error=User already exists.");
+        header("Location: create_account.php?error=User already exists.");
         exit();
     } else {
 

@@ -43,6 +43,7 @@ function get_candidate_list($conn) {
     return $query->get_result();
 }
 
+//even if these functions aren't used I thought I'd keep them
 function insert_candidate($conn, $name) {
     $query = $conn->prepare("INSERT INTO Voting_Options(name) VALUE (?)");
     $query->bind_param("s", $name);
